@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SKZStore - Official Stray Kids Merchandise</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>SKZStore</h2>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="album.html">Album</a></li>
+            <li><a href="skzoo.html">SKZOO</a></li>
+            <li><a href="Hoodie.html">Hoodie</a></li>
+        </ul>
+        <a href="cart.html" class="btn border cart-btn">
+            <i class="fas fa-shopping-cart text-primary"></i> Shopping Cart
+        </a>
+    </div>
+
+    <div class="content">
+        <h1>Become Part of the SKZ Family with Official Stray Kids Merchandise</h1>
+        <p>We present the latest collection that every Stay should have. Buy now and show your love and support.</p>
+
+        <div class="container-fluid pt-5">
+            <div class="text-center mb-4">
+                <h2 class="section-title px-5"><span class="px-2">SKZ Hoodie</span></h2>
+            </div>
+            <div class="row px-xl-5 pb-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="card product-item border-0 mb-4" data-name="Seungmin Hoodie" data-price="900000">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="img/seungminhoodie.jpg" alt="5Star">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Seungmin Hoodie</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>Rp 900.000</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer justify-content-between text-center bg-light border">
+                            <a href="cart.html" class="btn btn-sm text-dark p-0" onclick="addToCart('Seungmin Hoodie', 900000)"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="card product-item border-0 mb-4" data-name="Bangchan Hoodie" data-price="900000">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="img/bangchanhoodie.jpg" alt="maxident">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Bangchan Hoodie</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>Rp 900.000</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer justify-content-between text-center bg-light border">
+                            <a href="cart.html" class="btn btn-sm text-dark p-0" onclick="addToCart('Bangchan Hoodie', 900000)"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="card product-item border-0 mb-4" data-name="Felix Hoodie" data-price="900000">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="img/felixhoodie.jpg" alt="Felix Hoodie">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Felix Hoodie</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>Rp 900.000</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer justify-content-between text-center bg-light border">
+                            <a href="cart.html" class="btn btn-sm text-dark p-0" onclick="addToCart('Felix Hoodie', 1000000)"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 pb-1">
+                    <div class="card product-item border-0 mb-4" data-name="Hyunjin Hoodie" data-price="900000">
+                        <div class="card-header product-img position-relative overflow-hidden bg-transparent border p-0">
+                            <img class="img-fluid w-100" src="img/hyunjinhoodie_.jpg" alt="Hyunjin Hoodie">
+                        </div>
+                        <div class="card-body border-left border-right text-center p-0 pt-4 pb-3">
+                            <h6 class="text-truncate mb-3">Hyunjin Hoodie</h6>
+                            <div class="d-flex justify-content-center">
+                                <h6>Rp 900.000</h6>
+                            </div>
+                        </div>
+                        <div class="card-footer justify-content-between text-center bg-light border">
+                            <a href="cart.html" class="btn btn-sm text-dark p-0" onclick="addToCart('Hyunjin Hoodie', 900000)"><i class="fas fa-shopping-cart text-primary mr-1"></i>Add To Cart</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <script>
+        function addToCart(product, price) {
+       // Retrieve the cart from localStorage, or initialize it as an empty array if it doesn't exist
+       let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+       // Check if the product already exists in the cart
+       let existingProduct = cart.find(item => item.product === product);
+
+       if (existingProduct) {
+           // If the product exists, increment the quantity
+           existingProduct.quantity++;
+       } else {
+           // If the product does not exist, add it to the cart with a quantity of 1
+           cart.push({ product, price, quantity: 1 });
+       }
+
+       // Save the updated cart back to localStorage
+       localStorage.setItem('cart', JSON.stringify(cart));
+
+       // Notify the user that the product has been added to the cart
+       alert(`${product} added to cart`);
+   }
+   </script>
+</body>
+</html>
